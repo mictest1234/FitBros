@@ -1,0 +1,77 @@
+body {
+  margin: 50px 80px;
+  background-color: black;
+}
+
+#bg-bluebox {
+  width: 55%;
+  height: 3040px;
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+  background: radial-gradient(100% 100% at 100% 0%, #1677ff 0%, #002e6f 100%);
+}
+
+#meal-head {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin-top: 100px;
+}
+
+#meal-title {
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+#back-btn {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30%;
+  text-align: right;
+  text-decoration: none;
+}
+
+#back-btn-txt {
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 27px;
+  margin-left: 10px;
+}
+
+.black-box {
+  width: 655px;
+  height: 405px;
+  top: 305px;
+  left: 330px;
+  background-color: rgba(40, 40, 40, 1);
+  position: absolute;
+  z-index: 1;
+  border-radius: 12px;
+  align-content: center;
+  justify-items: center;
+}
+
+.blue-patti {
+  width: 985px;
+  height: 95px;
+  top: 330px;
+  left: 0px;
+  position: absolute;
+  z-index: 2;
+  background: radial-gradient(100% 100% at 100% 100%, #002e6f 0%, #0059d5 100%);
+  align-content: center;
+  text-align: center;
+}
+
+.blue-patti span {
+  font-size: 48px;
+  font-family: "Potta One";
+  color: white;
+  margin-left: 380px;
+}

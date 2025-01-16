@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Bros - Workout</title>
+    <link rel="icon" href="./assets/images/fitbros.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style-workout.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="calc-head">
+        <div id="calc-title">No More One-Size-Fits-All,<br>Get Your <div id="calc-bmi-font">Perfect Workout Plan</div>
+        </div>
+        <a href="index.html" id="back-btn">
+            <svg width="44" height="44" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32.7612" cy="32" r="30" stroke="#1677FF" stroke-width="4" />
+                <path d="M32.7612 22.6666L23.4279 31.9999M23.4279 31.9999L32.7612 41.3333M23.4279 31.9999H42.0945"
+                    stroke="#1677FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p id="back-btn-txt">back to home</p>
+        </a>
+    </header>
+
+    <div style="display: grid; grid-template-columns: 1fr 3fr;">
+        <div style="display: grid;">
+            <label for="goal">GOAL</label>
+            <label for="equipments">EQUIPMENTS</label>
+            <label for="experience">EXPERIENCE</label>
+            <label for="days">DAYS</label>
+        </div>
+        <div style="display: grid;">
+            <div>
+                <input type="radio" id="goal" name="goal" value="gain" style="width: 20px;">
+                <label for="gain" style="font-size: 28px;">Gain Muscle</label>
+                <input type="radio" id="goal" name="goal" value="lose" style="width: 20px;">
+                <label for="lose" style="font-size: 28px;">Lose Fat</label>
+            </div>
+            <div>
+                <input type="radio" id="equipments" name="equipments" value="body" style="width: 20px;">
+                <label for="body" style="font-size: 28px;">Body-weight</label>
+                <input type="radio" id="equipments" name="equipments" value="weight" style="width: 20px;">
+                <label for="weight" style="font-size: 28px;">Weighted</label>
+            </div>
+            <div>
+                <input type="radio" id="experience" name="experience" value="beginner" style="width: 20px;">
+                <label for="beginner" style="font-size: 28px;">Beginner</label>
+                <input type="radio" id="experience" name="experience" value="intermediate" style="width: 20px;">
+                <label for="intermediate" style="font-size: 28px;">Interdediate</label>
+                <input type="radio" id="experience" name="experience" value="advanced" style="width: 20px;">
+                <label for="advanced" style="font-size: 28px;">Advanced</label>
+            </div>
+            <select name="days" id="days">
+                <option value="select">Select number of days</option>
+                <option value="2">2 days/week</option>
+                <option value="3">3 days/week</option>
+                <option value="4">4 days/week</option>
+                <option value="5">5 days/week</option>
+                <option value="6">6 days/week</option>
+            </select>
+        </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.5fr 1fr;">
+        <div>
+            <button>Generate <svg width="19" height="23" viewBox="0 0 19 23" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 11.5L0.250001 22.3253L0.250002 0.674682L19 11.5Z" fill="white" />
+                </svg>
+            </button>
+            <p class="calc-info" style="margin-top: 40px; padding-right: 30px;">Our Workout Program
+                Generator is
+                designed to help you create personalized fitness plans tailored to your goals, whether you're looking to
+                build
+                strength, improve endurance, or lose weight. Simply input your preferences, such as your goal, equipment
+                you
+                have , fitness level, and day split and the tool will generate a variety of exercises and routines to
+                keep your
+                workouts fresh and effective. No matter your experience, it’s the perfect way to stay motivated and
+                achieve
+                lasting results.</p>
+        </div>
+        <img src="./assets/images/workout.png" alt="">
+    </div>
+
+    <p style="font-family:'Permanent Marker'; font-style: normal; font-weight: 400; font-size: 45px; color: white; width: 100%; text-align: end;">Your Goals, Your Workout, Your Way.</p>
+</body>
+
+</html>

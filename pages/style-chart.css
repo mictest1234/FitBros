@@ -1,0 +1,113 @@
+body {
+  background-color: black;
+  margin: 80px 0px;
+  padding: 0;
+}
+
+#cheatSheet-title {
+  height: 120px;
+  border-radius: 35px;
+  background-color: rgba(0, 46, 111, 0.8);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+  padding-left: 110px;
+}
+
+#cheatSheet-content {
+  padding-left: 100px;
+  padding-top: 70px;
+  display: flex;
+}
+
+.cheatSheet-quotes {
+  height: 100px;
+  width: 630px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  background-color: rgba(83, 83, 83, 1);
+  border-radius: 25px;
+  margin: 20px;
+  align-content: center;
+  padding-left: 20px;
+}
+
+.quotes-photo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+#cheatSheet-table {
+  width: 800px;
+  background-color: rgba(40, 40, 40, 1);
+  margin-left: 100px;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 2.7fr 1.4fr 1.55fr 1.2fr 1fr;
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+#cheatSheet-head {
+  align-content: center;
+  height: 72px;
+  background-color: rgba(0, 46, 111, 1);
+}
+
+.cheatSheet-ele {
+  align-content: center;
+  padding-left: 35px;
+}
+
+.black-ele {
+  align-content: center;
+  background-color: rgba(27, 27, 27, 1);
+}
+
+.macro-ele {
+  align-content: center;
+}
+
+.fruits-row {
+  text-align: center;
+  border-right: 2px solid white;
+  display: grid;
+  grid-template-rows: 1.6fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dryFruits-row {
+  text-align: center;
+  border-right: 2px solid white;
+  display: grid;
+  grid-template-rows: 1.6fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grains-row {
+  text-align: center;
+  border-right: 2px solid white;
+  display: grid;
+  grid-template-rows: 1.6fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.vegetables-row {
+  text-align: center;
+  border-right: 2px solid white;
+  display: grid;
+  grid-template-rows: 1.6fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.non-veg-row {
+  text-align: center;
+  border-right: 2px solid white;
+  display: grid;
+  grid-template-rows: 1.6fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}

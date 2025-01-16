@@ -1,0 +1,114 @@
+body {
+    margin: 50px 80px;
+    background-color: black;
+  }
+  
+  #calc-head {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+  
+  #calc-title {
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+  }
+  
+  #calc-bmi-font {
+    display: inline;
+    color: rgba(22, 119, 255, 1);
+    font-family: "Permanent Marker";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+  }
+  
+  #back-btn {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30%;
+    text-align: right;
+    text-decoration: none;
+  }
+  
+  #back-btn-txt {
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 27px;
+    margin-left: 10px;
+  }
+  
+  .calc-info {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+  
+  label {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  input {
+    background-color: rgba(83, 83, 83, 1);
+    border-radius: 8px;
+    height: 33px;
+    width: 220px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+    margin-top: 10px;
+    border: 2px solid transparent;
+  }
+  
+  button {
+    height: 53px;
+    width: 214px;
+    background-color: rgba(22, 119, 255, 1);
+    border-radius: 15px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+    margin-top: 40px;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  select {
+    background-color: rgba(83, 83, 83, 1);
+    border-radius: 8px;
+    height: 37px;
+    width: 300px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+    border: 2px solid transparent;
+  }
+  
+  button:hover {
+    /* background-color: rgba(40, 40, 40, 1);
+      color: rgba(22, 119, 255, 1); */
+    border: 2px solid white;
+  }
+  
+  /* #bmi-calculator{
+    display: none;
+  } */
+  
