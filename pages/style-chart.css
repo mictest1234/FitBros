@@ -28,7 +28,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  background-color: rgba(83, 83, 83, 1);
+  background-color: rgba(83, 83, 83, 0.433);
   border-radius: 25px;
   margin: 20px;
   align-content: center;
@@ -45,7 +45,7 @@ body {
 #cheatSheet-table {
   width: 800px;
   background-color: rgba(40, 40, 40, 1);
-  margin-left: 100px;
+  /* margin-left: 100px; */
   margin-top: 70px;
   display: grid;
   grid-template-columns: 2.7fr 1.4fr 1.55fr 1.2fr 1fr;

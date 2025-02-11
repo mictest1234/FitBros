@@ -91,7 +91,7 @@ select {
   background-color: rgba(83, 83, 83, 1);
   border-radius: 8px;
   height: 37px;
-  width: 300px;
+  width: 330px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -110,3 +110,83 @@ button:hover {
 /* #bmi-calculator{
   display: none;
 } */
+
+#bmi-result-box {
+  height: 55px;
+  width: 700px;
+  color: black;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-align: start;
+  padding-left: 20px;
+  align-content: center;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 28px;
+  display: none;
+}
+
+#fat-result-box {
+  height: 55px;
+  width: 590px;
+  background-color: rgba(133, 189, 113, 1);
+  color: black;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-align: start;
+  padding-left: 20px;
+  align-content: center;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 28px;
+  display: none;
+}
+
+.cal-result-box {
+  height: 55px;
+  width: 590px;
+  background-color: rgba(133, 189, 113, 1);
+  color: black;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-align: start;
+  padding-left: 20px;
+  align-content: center;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 28px;
+  /* display: none; */
+}
+
+#bmi-calculator{
+  display: none;
+}
+
+#fat-percentage-calculator{
+  display: none;
+}
+
+#cal-intake-calculator{
+  display: none;
+}
+
+#hip{
+  display: none;
+}
+
+#hip-label{
+  display: none;
+}
+
+#cal-result-box-1{
+  display: none;
+}
+#cal-result-box-2{
+  display: none;
+}
+#cal-result-box-3{
+  display: none;
+}
+#cal-result-box-4{
+  display: none;
+}

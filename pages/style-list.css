@@ -1,0 +1,108 @@
+body {
+  /* background-color: black; */
+  background: radial-gradient(100% 100% at 100% 0%, #1677ff 0%, #002e6f 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#exercise-box {
+  height: 320px;
+  width: 320px;
+  background-color: white;
+  border-radius: 16px;
+  margin-top: 40px;
+  margin-left: 50px;
+  text-align: center;
+  align-content: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#exercise-box:hover .box-body {
+  bottom: 0px;
+}
+
+#exercise-name-box {
+  position: absolute;
+  bottom: 10px;
+  left: 85px;
+  width: 150px;
+  height: 25px;
+  background-color: rgba(17, 104, 225, 1);
+  border-radius: 999px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  align-content: center;
+}
+
+.box-body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(17, 104, 225);
+  /* top: 0px; */
+  bottom: -100%;
+  align-content: center;
+  transition: 0.3s;
+}
+
+.name {
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+
+#back-btn {
+  display: flex;
+  align-items: center;
+  /* padding-bottom: 30%; */
+  text-align: right;
+  text-decoration: none;
+}
+
+#back-btn:hover{
+  text-decoration:underline;
+  color: #06387f;
+}
+
+#back-btn-txt {
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 27px;
+  margin-left: 10px;
+}
+
+#abdominal{
+  display: none;
+}
+#shoulder{
+  display: none;
+}
+#legs{
+  display: none;
+}
+#chest{
+  display: none;
+}
+#back{
+  display: none;
+}
+#bicep{
+  display: none;
+}
+#tricep{
+  display: none;
+}

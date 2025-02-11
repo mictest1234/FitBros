@@ -53,8 +53,13 @@ body {
   position: absolute;
   z-index: 1;
   border-radius: 12px;
+  /* text-align: center; */
   align-content: center;
   justify-items: center;
+}
+
+.black-box ol{
+  padding: 100px 50px 0 80px;
 }
 
 .blue-patti {

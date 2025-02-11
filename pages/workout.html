@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fit Bros - Workout</title>
-    <link rel="icon" href="./assets/images/fitbros.png" type="image/x-icon" />
+    <link rel="icon" href="../assets/images/fitbros.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style-workout.css" />
 
     <link
@@ -23,7 +23,7 @@
     <header id="calc-head">
         <div id="calc-title">No More One-Size-Fits-All,<br>Get Your <div id="calc-bmi-font">Perfect Workout Plan</div>
         </div>
-        <a href="index.html" id="back-btn">
+        <a href="../index.html" id="back-btn">
             <svg width="44" height="44" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="32.7612" cy="32" r="30" stroke="#1677FF" stroke-width="4" />
                 <path d="M32.7612 22.6666L23.4279 31.9999M23.4279 31.9999L32.7612 41.3333M23.4279 31.9999H42.0945"
@@ -42,26 +42,26 @@
         </div>
         <div style="display: grid;">
             <div>
-                <input type="radio" id="goal" name="goal" value="gain" style="width: 20px;">
+                <input type="radio" id="goal-gain" name="goal" value="gain" style="width: 20px;">
                 <label for="gain" style="font-size: 28px;">Gain Muscle</label>
-                <input type="radio" id="goal" name="goal" value="lose" style="width: 20px;">
+                <input type="radio" id="goallose" name="goal" value="lose" style="width: 20px;">
                 <label for="lose" style="font-size: 28px;">Lose Fat</label>
             </div>
             <div>
-                <input type="radio" id="equipments" name="equipments" value="body" style="width: 20px;">
+                <input type="radio" id="equipments-bw" name="equipments" value="body" style="width: 20px;">
                 <label for="body" style="font-size: 28px;">Body-weight</label>
-                <input type="radio" id="equipments" name="equipments" value="weight" style="width: 20px;">
+                <input type="radio" id="equipments-w" name="equipments" value="weight" style="width: 20px;">
                 <label for="weight" style="font-size: 28px;">Weighted</label>
             </div>
             <div>
-                <input type="radio" id="experience" name="experience" value="beginner" style="width: 20px;">
+                <input type="radio" id="experience-b" name="experience" value="beginner" style="width: 20px;">
                 <label for="beginner" style="font-size: 28px;">Beginner</label>
-                <input type="radio" id="experience" name="experience" value="intermediate" style="width: 20px;">
+                <input type="radio" id="experience-i" name="experience" value="intermediate" style="width: 20px;">
                 <label for="intermediate" style="font-size: 28px;">Interdediate</label>
-                <input type="radio" id="experience" name="experience" value="advanced" style="width: 20px;">
+                <input type="radio" id="experience-a" name="experience" value="advanced" style="width: 20px;">
                 <label for="advanced" style="font-size: 28px;">Advanced</label>
             </div>
-            <select name="days" id="days">
+            <select name="days" id="days" onclick="update_days()">
                 <option value="select">Select number of days</option>
                 <option value="2">2 days/week</option>
                 <option value="3">3 days/week</option>
@@ -74,7 +74,7 @@
 
     <div style="display: grid; grid-template-columns: 1.5fr 1fr;">
         <div>
-            <button>Generate <svg width="19" height="23" viewBox="0 0 19 23" fill="none"
+            <button onclick="generate()">Generate <svg width="19" height="23" viewBox="0 0 19 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M19 11.5L0.250001 22.3253L0.250002 0.674682L19 11.5Z" fill="white" />
                 </svg>
@@ -91,10 +91,14 @@
                 achieve
                 lasting results.</p>
         </div>
-        <img src="./assets/images/workout.png" alt="">
+        <img style="border-radius: 15px;" src="../assets/images/workout.png" alt="">
     </div>
 
-    <p style="font-family:'Permanent Marker'; font-style: normal; font-weight: 400; font-size: 45px; color: white; width: 100%; text-align: end;">Your Goals, Your Workout, Your Way.</p>
+    <p
+        style="font-family:'Permanent Marker'; font-style: normal; font-weight: 400; font-size: 45px; color: white; width: 100%; text-align: end;">
+        Your Goals, Your Workout, Your Way.</p>
+
+    <script src="./script-workout.js"></script>
 </body>
 
 </html>

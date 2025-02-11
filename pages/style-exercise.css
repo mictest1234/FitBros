@@ -1,0 +1,90 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+#bg-bluebox {
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+  /* padding: 50px; */
+  background: radial-gradient(100% 100% at 100% 0%, #1677ff 0%, #002e6f 100%);
+}
+
+#back-btn {
+  display: flex;
+  align-items: center;
+  /* padding-bottom: 30%; */
+  text-align: right;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+#back-btn-txt {
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 27px;
+  /* margin-left: 10px; */
+}
+
+#exercise-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  color: white;
+  margin-left: 70px;
+}
+
+#exercise-box {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border-radius: 16px;
+  margin-top: 40px;
+  margin-left: 50px;
+  text-align: center;
+  align-content: center;
+}
+
+#part-name {
+  height: 50px;
+  width: 180px;
+  background-color: white;
+  border-radius: 999px;
+  margin-left: 50px;
+  margin-top: 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #002e6f;
+  text-align: center;
+  align-content: center;
+}
+
+#instructions {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  color: white;
+  margin-top: 50px;
+}
+
+#list {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 50px;
+  margin-top: 40px;
+  padding: 30px;
+  color: white;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fit Bros - Fat Percentage Calculator</title>
+        <link rel="icon" href="../assets/images/fitbros.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="./style-calc.css" />
+    
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    </head>
+<body>
+        <div id="fat-percentage-calculator">
+        <header id="calc-head">
+            <div id="calc-title">Get the Full Picture: <br>Know Your Body <div id="calc-bmi-font">Fat Percentage</div></div>
+            <a href="../index.html" id="back-btn">
+                <svg width="44" height="44" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32.7612" cy="32" r="30" stroke="#1677FF" stroke-width="4"/>
+                    <path d="M32.7612 22.6666L23.4279 31.9999M23.4279 31.9999L32.7612 41.3333M23.4279 31.9999H42.0945" stroke="#1677FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p id="back-btn-txt">back to home</p>
+            </a>
+        </header>
+        <p class="calc-info">The Body Fat Calculator can be used to estimate your total body fat based on specific measurements.</p>
+        <p class="calc-info" style="font-size: 25px;">Modify the values and click the Calculate button to use :</p>
+
+        <div style="display: grid; grid-template-columns: 2fr 2.5fr; color: white;">
+            <div>
+                <div style="display: grid; grid-template-columns: 1fr 2.5fr;">
+                    <div style="display: grid;">
+                        <label for="fat-age">AGE</label>
+                        <label for="fat-gender">GENDER</label>
+                        <label for="fat-height">HEIGHT</label>
+                        <label for="neck">NECK</label>
+                        <label for="waist">WAIST</label>
+                        <label for="hip" id="hip-label">HIP</label>
+                    </div>
+                    <div style="display: grid;">
+                        <input type="number" id="fat-age" name="fat-age" placeholder="Enter your age">
+                        <div>
+                            <input type="radio" id="gender-male" name="fat-gender" value="Male" style="width: 20px;" onclick="disappear_hip()">
+                            <label for="Male" style="font-size: 28px;">Male</label>
+                            <input type="radio" id="gender-female" name="fat-gender" value="Female" style="width: 20px;" onclick="appear_hip()">
+                            <label for="Female" style="font-size: 28px;">Female</label>
+                        </div>
+                            <input type="number" id="fat-height" name="height" placeholder="in cm">
+                            <input type="number" id="neck" name="neck" placeholder="in cm">
+                            <input type="number" id="waist" name="waist" placeholder="in cm">
+                            <input type="number" id="hip" name="hip" placeholder="in cm" class="hip-box">
+                        </div>
+                        <button onclick="fat_calculate()">Calculate <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 11.5L0.250001 22.3253L0.250002 0.674682L19 11.5Z" fill="white"/>
+                            </svg>
+                        </button>
+                </div>
+                <div id="fat-result-box">
+                    <span id="fat-result"></span>
+                </div>
+            </div>
+            <div style="text-align: center; justify-items: center;">
+                <img src="../assets/images/fat.png" alt="">
+                <div style="margin-top: 30px; height: 180px; width: 600px; background-color: rgba(40, 40, 40, 1); border-radius: 12px; font-family: 'Poppins';font-style: normal; font-weight: 600; font-size: 29px; align-content: center;">BODY FAT PERCENTAGE FORMULA :<div style="font-size: 20px;padding-top: 20px;">[495/{1.29579 - 0.35004xlog10(waist+hip-neck) + 0.22100xlog10(height)}] - 450</div> </div>
+            </div>
+        </div>
+        <p class="calc-info" style="margin-top: 40px;">Body Fat, Overweight, and Obesity <br>
+            The scientific term for body fat is "adipose tissue." Adipose tissue serves a number of important functions. Its primary purpose is to store lipids from which the body creates energy. In addition, it secretes a number of important hormones, and provides the body with some cushioning as well as insulation.
+            Body fat includes essential body fat and storage body fat. Essential body fat is a base level of fat that is found in most parts of the body. It is necessary fat that maintains life and reproductive functions. The amount of essential fat differs between men and women, and is typically around 2-5% in men, and 10-13% in women. The healthy range of body fat for men is typically defined as 8-19%, while the healthy range for women is 21-33%. While having excess body fat can have many detrimental effects on a person's health, insufficient body fat can have negative health effects of its own, and maintaining a body fat percentage below, or even at the essential body fat percentage range is a topic that should be discussed with a medical professional.</p>
+    </div>
+
+    <script src="./script-calc.js"></script>
+</body>
+</html>

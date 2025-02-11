@@ -79,6 +79,7 @@
   padding: 30px 40px 30px 40px;
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 .calc-button-img {
@@ -415,6 +416,35 @@ button:hover {
   /* background-color: rgba(40, 40, 40, 1);
     color: rgba(22, 119, 255, 1); */
   border: 2px solid white;
+}
+
+#target-calorie {
+  background-color: rgba(90, 157, 249, 1);
+  border-radius: 8px;
+  height: 33px;
+  width: 220px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  text-align: center;
+  border: 2px solid transparent;
+  height: 35px;
+  width: 200px;
+}
+
+select {
+  background-color: rgba(90, 157, 249, 1);
+  border-radius: 8px;
+  height: 37px;
+  width: 300px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 10px;
+  border: 2px solid transparent;
 }
 
 .macro {

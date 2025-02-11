@@ -52,13 +52,13 @@
                         <input type="number" id="height" name="height" placeholder="in cm">
                         <input type="number" id="weight" name="weight" placeholder="in kg">
                     </div>
-                    <button>Calculate <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button onclick="bmi_calculate()">Calculate <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19 11.5L0.250001 22.3253L0.250002 0.674682L19 11.5Z" fill="white"/>
                         </svg>
                     </button>
                 </div>
-                <div  style="height: 55px; width: 590px; background-color: rgba(133, 189, 113, 1); color: black; border-radius: 15px; margin-top: 30px; text-align: start; padding-left: 20px; align-content: center; font-family: 'Poppins'; font-weight: 600; font-size: 28px;">
-                    <span>Result : BMI = 23 kg/m^2 (Normal)</span>
+                <div id="bmi-result-box">
+                    <span id="bmi-result"></span>
                 </div>
             </div>
             <div style="text-align: center; justify-items: center;">
@@ -84,37 +84,37 @@
         <p class="calc-info">The Body Fat Calculator can be used to estimate your total body fat based on specific measurements.</p>
         <p class="calc-info" style="font-size: 25px;">Modify the values and click the Calculate button to use :</p>
 
-        <div style="display: grid; grid-template-columns: 1fr 2.5fr; color: white;">
+        <div style="display: grid; grid-template-columns: 2fr 2.5fr; color: white;">
             <div>
                 <div style="display: grid; grid-template-columns: 1fr 2.5fr;">
                     <div style="display: grid;">
-                        <label for="age">AGE</label>
-                        <label for="gender">GENDER</label>
-                        <label for="height">HEIGHT</label>
-                        <label for="weight">WEIGHT</label>
+                        <label for="fat-age">AGE</label>
+                        <label for="fat-gender">GENDER</label>
+                        <label for="fat-height">HEIGHT</label>
                         <label for="neck">NECK</label>
                         <label for="waist">WAIST</label>
+                        <label for="hip" id="hip-label">HIP</label>
                     </div>
                     <div style="display: grid;">
-                        <input type="number" id="age" name="age" placeholder="Enter your age">
+                        <input type="number" id="fat-age" name="fat-age" placeholder="Enter your age">
                         <div>
-                            <input type="radio" id="gender" name="gender" value="Male" style="width: 20px;">
+                            <input type="radio" id="gender-male" name="fat-gender" value="Male" style="width: 20px;" onclick="disappear_hip()">
                             <label for="Male" style="font-size: 28px;">Male</label>
-                            <input type="radio" id="gender" name="gender" value="Female" style="width: 20px;">
+                            <input type="radio" id="gender-female" name="fat-gender" value="Female" style="width: 20px;" onclick="appear_hip()">
                             <label for="Female" style="font-size: 28px;">Female</label>
                         </div>
-                            <input type="number" id="height" name="height" placeholder="in cm">
-                            <input type="number" id="weight" name="weight" placeholder="in kg">
+                            <input type="number" id="fat-height" name="height" placeholder="in cm">
                             <input type="number" id="neck" name="neck" placeholder="in cm">
                             <input type="number" id="waist" name="waist" placeholder="in cm">
+                            <input type="number" id="hip" name="hip" placeholder="in cm" class="hip-box">
                         </div>
-                        <button>Calculate <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button onclick="fat_calculate()">Calculate <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19 11.5L0.250001 22.3253L0.250002 0.674682L19 11.5Z" fill="white"/>
                             </svg>
                         </button>
                 </div>
-                <div  style="height: 55px; width: 590px; background-color: rgba(133, 189, 113, 1); color: black; border-radius: 15px; margin-top: 30px; text-align: start; padding-left: 20px; align-content: center; font-family: 'Poppins'; font-weight: 600; font-size: 28px;">
-                    <span>Result : BODY FAT = 15.3 % (Normal)</span>
+                <div id="fat-result-box">
+                    <span id="fat-result"></span>
                 </div>
             </div>
             <div style="text-align: center; justify-items: center;">
@@ -148,24 +148,24 @@
             <div>
                 <div style="display: grid; grid-template-columns: 1fr 2.5fr;">
                     <div style="display: grid;">
-                        <label for="age">AGE</label>
-                        <label for="gender">GENDER</label>
-                        <label for="height">HEIGHT</label>
-                        <label for="weight">WEIGHT</label>
+                        <label for="cal-age">AGE</label>
+                        <label for="cal-gender">GENDER</label>
+                        <label for="cal-height">HEIGHT</label>
+                        <label for="cal-weight">WEIGHT</label>
                         <label for="activity">ACTIVITY</label>
                     </div>
                     <div style="display: grid;">
-                        <input type="number" id="age" name="age" placeholder="Enter your age">
+                        <input type="number" id="cal-age" name="cal-age" placeholder="Enter your age">
                         <div>
-                            <input type="radio" id="gender" name="gender" value="Male" style="width: 20px;">
+                            <input type="radio" id="cal-gender-male" name="cal-gender" value="Male" style="width: 20px;">
                             <label for="Male" style="font-size: 28px;">Male</label>
-                            <input type="radio" id="gender" name="gender" value="Female" style="width: 20px;">
+                            <input type="radio" id="cal-gender-female" name="cal-gender" value="Female" style="width: 20px;">
                             <label for="Female" style="font-size: 28px;">Female</label>
                         </div>
-                        <input type="number" id="height" name="height" placeholder="in cm">
-                        <input type="number" id="weight" name="weight" placeholder="in kg">
-                        <select name="activity" id="activity">
-                            <option value="select">Select your Activity level</option>
+                        <input type="number" id="cal-height" name="cal-height" placeholder="in cm">
+                        <input type="number" id="cal-weight" name="cal-weight" placeholder="in kg">
+                        <select name="activity" id="activity" onchange="update_activity()">
+                            <option value="bmr">Basal Metabolic Rate (BMR)</option>
                             <option value="sed">Sedentery: little or no exercise</option>
                             <option value="light">Light: exercise 1-3 times/week</option>
                             <option value="mod">Moderate: exercise 4-5 times/week </option>
@@ -181,31 +181,30 @@
                         <li>Very intense exercise: 2+ hours of elevated heart rate activity.</li>
                     </ul>
 
-                    <button style="margin-top: 0px;">Calculate <svg width="19" height="23" viewBox="0 0 19 23"
+                    <button onclick="calorie_calculate()" style="margin-top: 0px;">Calculate <svg width="19" height="23" viewBox="0 0 19 23"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19 11.5L0.250001 22.3253L0.250002 0.674682L19 11.5Z" fill="white" />
                         </svg>
                     </button>
                 </div>
-                <div
-                    style="height: 55px; width: 590px; background-color: rgba(133, 189, 113, 1); color: black; border-radius: 15px; margin-top: 30px; text-align: start; padding-left: 20px; align-content: center; font-family: 'Poppins'; font-weight: 600; font-size: 28px;">
-                    <span>Maintain weight = 2453 calories/day</span>
+                <div class="cal-result-box" id="cal-result-box-1">
+                    <span id="cal-result-1"></span>
                 </div>
                 <label style="margin-right:80px;margin-top: 20px;" for="goal">GOAL</label>
-                <input type="radio" id="goal" name="goal" value="gain" style="width: 20px;">
+                <input type="radio" id="goal" name="goal" value="gain" style="width: 20px;" onclick="gain()">
                 <label for="gain" style="font-size: 28px;">Weight Gain</label>
-                <input type="radio" id="goal" name="goal" value="loss" style="width: 20px;">
+                <input type="radio" id="goal" name="goal" value="loss" style="width: 20px;" onclick="loss()">
                 <label for="loss" style="font-size: 28px;">Weight Loss</label>
 
                 <div>
-                    <div style="height: 55px; width: 590px; background-color: rgba(133, 189, 113, 1); color: black; border-radius: 15px; margin-top: 30px; text-align: start; padding-left: 20px; align-content: center; font-family: 'Poppins'; font-weight: 600; font-size: 28px;">
-                        <span>Maintain weight = 2453 calories/day</span>
+                    <div class="cal-result-box" id="cal-result-box-2">
+                        <span id="cal-result-2">Maintain weight = 2453 calories/day</span>
                     </div>
-                    <div style="height: 55px; width: 590px; background-color: rgba(133, 189, 113, 1); color: black; border-radius: 15px; margin-top: 30px; text-align: start; padding-left: 20px; align-content: center; font-family: 'Poppins'; font-weight: 600; font-size: 28px;">
-                        <span>Maintain weight = 2453 calories/day</span>
+                    <div class="cal-result-box" id="cal-result-box-3">
+                        <span id="cal-result-3">Maintain weight = 2453 calories/day</span>
                     </div>
-                    <div style="height: 55px; width: 590px; background-color: rgba(133, 189, 113, 1); color: black; border-radius: 15px; margin-top: 30px; text-align: start; padding-left: 20px; align-content: center; font-family: 'Poppins'; font-weight: 600; font-size: 28px;">
-                        <span>Maintain weight = 2453 calories/day</span>
+                    <div class="cal-result-box" id="cal-result-box-4">
+                        <span id="cal-result-4">Maintain weight = 2453 calories/day</span>
                     </div>
                 </div>
 
@@ -228,5 +227,8 @@
             </div>
         </div>
     </div>
+
+    <script src="../script.js"></script>
+    <script src="./script-calc.js"></script>
 </body>
 </html>

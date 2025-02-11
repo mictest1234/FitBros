@@ -1,0 +1,134 @@
+body {
+  margin: 50px 80px;
+  background-color: black;
+}
+
+#bg-bluebox {
+  width: 55%;
+  height: 5500px;
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+  background: radial-gradient(100% 100% at 100% 0%, #1677ff 0%, #002e6f 100%);
+}
+
+#meal-head {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin-top: 100px;
+}
+
+#workout-title {
+  width: 420px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  margin-left: 45px;
+  /* background-color: blue; */
+}
+
+#back-btn {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30%;
+  text-align: right;
+  text-decoration: none;
+}
+
+#back-btn-txt {
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 27px;
+  margin-left: 10px;
+}
+
+.warmup-txt {
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.black-box {
+  padding: 45px;
+  width: 794px;
+  height: 500px;
+  top: 365px;
+  left: 125px;
+  background-color: rgba(40, 40, 40, 1);
+  position: absolute;
+  z-index: 1;
+  border-radius: 12px;
+  /* align-content: center;
+    justify-items: center; */
+}
+
+.blue-patti {
+  height: 45px;
+  width: 270px;
+  border-radius: 1000px;
+  background-color: rgba(17, 104, 225, 1);
+  margin-left: 60%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.rest {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 37px;
+  color: white;
+  position: absolute;
+  left: 200px;
+}
+
+.day-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: white;
+  margin-left: 10%;
+}
+
+.inverted-comma {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 185px;
+  color: white;
+  position: absolute;
+  top: 300px;
+  left: 190px;
+  z-index: 5;
+}
+
+.worklist {
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+#footer {
+  top: 5400px;
+  right: 120px;
+  position: absolute;
+  font-family: "Permanent Marker";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  color: white;
+}
