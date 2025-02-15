@@ -58,6 +58,14 @@ body {
   font-size: 26px;
 }
 
+.warmup-txt-1{
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+}
+
 .black-box {
   padding: 45px;
   width: 794px;

@@ -205,9 +205,9 @@ function day_temp(input){
         document.getElementById('rest-6').style.display = 'none'
         document.getElementById('footer').style.top = '3750px'
         document.getElementById('day-1').innerHTML = 'Monday'
-        document.getElementById('day-1').innerHTML = 'Tuesday'
-        document.getElementById('day-1').innerHTML = 'Thursday'
-        document.getElementById('day-1').innerHTML = 'Friday'
+        document.getElementById('day-2').innerHTML = 'Tuesday'
+        document.getElementById('day-3').innerHTML = 'Thursday'
+        document.getElementById('day-4').innerHTML = 'Friday'
     }
     else if(input == 5){
         
@@ -220,11 +220,11 @@ function day_temp(input){
         document.getElementById('rest-5').style.display = 'none'
         document.getElementById('rest-6').innerHTML = 'Sunday - Rest'
         document.getElementById('day-1').innerHTML = 'Monday'
-        document.getElementById('day-1').innerHTML = 'Tuesday'
-        document.getElementById('day-1').innerHTML = 'Wednesday'
-        document.getElementById('day-1').innerHTML = 'Thursday'
-        document.getElementById('day-1').innerHTML = 'Friday'
-        document.getElementById('day-1').innerHTML = 'Saturday'
+        document.getElementById('day-2').innerHTML = 'Tuesday'
+        document.getElementById('day-3').innerHTML = 'Wednesday'
+        document.getElementById('day-4').innerHTML = 'Thursday'
+        document.getElementById('day-5').innerHTML = 'Friday'
+        document.getElementById('day-6').innerHTML = 'Saturday'
     }
 }
 
@@ -256,6 +256,9 @@ window.addEventListener('load', function() {
         document.getElementById('warmup-1').innerHTML = 'WARM-UP : 5 min cycling, 15-20 reps shoulder rolls , <br> 1 set push-ups and 1 set pull ups'
         document.getElementById('warmup-2').innerHTML = 'WARM-UP : 5 min cycling, 15-20 reps shoulder rolls , <br> 1 set push-ups and 1 set pull ups'
         document.getElementById('warmup-3').innerHTML = 'WARM-UP : 5 min cycling, 15-20 reps shoulder rolls , <br> 1 set push-ups and 1 set pull ups'
+        document.getElementById('worklist-1').innerHTML = '<li>Flat bench press : 10-12 reps</li> <li>Barbell bent over rows : 10-12 reps</li> <li>Squats : 10-12 reps</li> <li>Dumbbell shoulder press : 10-12 reps</li> <li>Pec dec fly : 12-15 reps</li> <li>Straight bar tricep pushdown : 12-15 reps</li> <li>Dumbbell curls : 10-12 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Incline dumbbell press : 10-12 reps</li> <li>Lat pulldown : 10-12 reps</li> <li>Leg curls : 12-15 reps</li> <li> Dumbbell lateral raises : 10-12 reps</li> <li>Hyper-extensions : 12-15 reps</li> <li>Dumbbell overhand extensions : 10-12 reps</li> <li>Hammer curls : 10-12 reps</li>'
+        document.getElementById('worklist-3').innerHTML = '<li>Flat dumbbell press : 10-12 reps</li> <li>Seated cable rowing : 12-15 reps</li> <li>Leg extensions : 12-15 reps</li> <li> Millitary press : 10-12 reps</li> <li>High to low cable flies : 12-15 reps</li> <li>Skull crushers : 10-12 reps</li> <li>Preacher curls : 12-15 reps</li>'
         
     }
     else if(workout == 'g-w-b-4'){
@@ -268,6 +271,10 @@ window.addEventListener('load', function() {
         document.getElementById('warmup-2').innerHTML = 'WARM-UP : 5 min cycling, 15-20 reps shoulder rolls , <br> 1 set push-ups and 1 set pull ups'
         document.getElementById('warmup-3').innerHTML = 'WARM-UP : 5 min cycling, 15-20 reps shoulder rolls , <br> 1 set push-ups and 1 set pull ups'
         document.getElementById('warmup-4').innerHTML = 'WARM-UP : 5 min cycling, 15-20 reps shoulder rolls , <br> 1 set push-ups and 1 set pull ups'
+        document.getElementById('worklist-1').innerHTML = '<li>Flat bench press : 10-12 reps</li> <li>Barbell bent over rows : 10-12 reps</li> <li>Squats : 10-12 reps</li> <li>Dumbbell shoulder press : 10-12 reps</li> <li>Pec dec fly : 12-15 reps</li> <li>Straight bar tricep pushdown : 12-15 reps</li> <li>Dumbbell curls : 10-12 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Incline dumbbell press : 10-12 reps</li> <li>Lat pulldown : 10-12 reps</li> <li>Leg curls : 12-15 reps</li> <li> Dumbbell lateral raises : 10-12 reps</li> <li>Hyper-extensions : 12-15 reps</li> <li>Dumbbell overhand extensions : 10-12 reps</li> <li>Hammer curls : 10-12 reps</li>'
+        document.getElementById('worklist-3').innerHTML = '<li>Flat bench press : 10-12 reps</li> <li>Barbell bent over rows : 10-12 reps</li> <li>Squats : 10-12 reps</li> <li>Dumbbell shoulder press : 10-12 reps</li> <li>Pec dec fly : 12-15 reps</li> <li>Straight bar tricep pushdown : 12-15 reps</li> <li>Dumbbell curls : 10-12 reps</li>'
+        document.getElementById('worklist-4').innerHTML = '<li>Incline dumbbell press : 10-12 reps</li> <li>Lat pulldown : 10-12 reps</li> <li>Leg curls : 12-15 reps</li> <li> Dumbbell lateral raises : 10-12 reps</li> <li>Hyper-extensions : 12-15 reps</li> <li>Dumbbell overhand extensions : 10-12 reps</li> <li>Hammer curls : 10-12 reps</li>'
         }
     else if(workout == 'g-w-b-6'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
@@ -281,6 +288,12 @@ window.addEventListener('load', function() {
         document.getElementById('warmup-4').innerHTML = 'WARM-UP : 5 min cycling, 15-20 reps shoulder rolls , <br> 1 set push-ups and 1 set pull ups'
         document.getElementById('warmup-5').innerHTML = 'WARM-UP : 5 min cycling, 15-20 reps shoulder rolls , <br> 1 set push-ups and 1 set pull ups'
         document.getElementById('warmup-6').innerHTML = 'WARM-UP : 5 min cycling, 15-20 reps shoulder rolls , <br> 1 set push-ups and 1 set pull ups'
+        document.getElementById('worklist-1').innerHTML = '<li>Flat bench press : 10-12 reps</li> <li>Barbell bent over rows : 10-12 reps</li> <li>Squats : 10-12 reps</li> <li>Dumbbell shoulder press : 10-12 reps</li> <li>Pec dec fly : 12-15 reps</li> <li>Straight bar tricep pushdown : 12-15 reps</li> <li>Dumbbell curls : 10-12 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Incline dumbbell press : 10-12 reps</li> <li>Lat pulldown : 10-12 reps</li> <li>Leg curls : 12-15 reps</li> <li> Dumbbell lateral raises : 10-12 reps</li> <li>Hyper-extensions : 12-15 reps</li> <li>Dumbbell overhand extensions : 10-12 reps</li> <li>Hammer curls : 10-12 reps</li>'
+        document.getElementById('worklist-3').innerHTML = '<li>Flat dumbbell press : 10-12 reps</li> <li>Seated cable rowing : 12-15 reps</li> <li>Leg extensions : 12-15 reps</li> <li> Millitary press : 10-12 reps</li> <li>High to low cable flies : 12-15 reps</li> <li>Skull crushers : 10-12 reps</li> <li>Preacher curls : 12-15 reps</li>'
+        document.getElementById('worklist-4').innerHTML = '<li>Flat bench press : 10-12 reps</li> <li>Barbell bent over rows : 10-12 reps</li> <li>Squats : 10-12 reps</li> <li>Dumbbell shoulder press : 10-12 reps</li> <li>Pec dec fly : 12-15 reps</li> <li>Straight bar tricep pushdown : 12-15 reps</li> <li>Dumbbell curls : 10-12 reps</li>'
+        document.getElementById('worklist-5').innerHTML = '<li>Incline dumbbell press : 10-12 reps</li> <li>Lat pulldown : 10-12 reps</li> <li>Leg curls : 12-15 reps</li> <li> Dumbbell lateral raises : 10-12 reps</li> <li>Hyper-extensions : 12-15 reps</li> <li>Dumbbell overhand extensions : 10-12 reps</li> <li>Hammer curls : 10-12 reps</li>'
+        document.getElementById('worklist-6').innerHTML = '<li>Flat dumbbell press : 10-12 reps</li> <li>Seated cable rowing : 12-15 reps</li> <li>Leg extensions : 12-15 reps</li> <li> Millitary press : 10-12 reps</li> <li>High to low cable flies : 12-15 reps</li> <li>Skull crushers : 10-12 reps</li> <li>Preacher curls : 12-15 reps</li>'
     }
     else if(workout == 'g-w-i-3'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
@@ -289,6 +302,13 @@ window.addEventListener('load', function() {
         document.getElementById('day-title').innerHTML = 3
         day_temp(3);
         document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+        document.getElementById('warmup-1').innerHTML = 'WARM-UP : Shoulder rolls , wrist rolls , arm swings , 1 set of push-ups and 1 set of dumbell overhead extensions'
+        document.getElementById('warmup-2').innerHTML = 'WARM-UP : Shoulder rolls , wrist rolls , arm swings , 2 set of chin-ups'
+        document.getElementById('warmup-3').innerHTML = 'WARM-UP : 5 min cycling , knee bends , leg swings and 50-75 squats'
+        document.getElementById('worklist-1').innerHTML = '<li>Incline bench press : (3 sets) 10-12 reps</li> <li>Dumbbell shoulder press : (2 sets) 10-12 reps</li> <li>Cable overhead extensions : (2 sets) 12-15 reps</li> <li>Flat dumbbell press : (2 sets) 10-12 reps</li> <li>Rear delt fly : (2 sets) 12-15 reps</li> <li>Straight bar tricep pushdown : (2 sets) 12-15 reps</li> <li>Pec dec fly : (2 sets) 12-15 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Barbell bent over rows : (3 sets) 10-12 reps</li> <li>Lat pulldown : (2 sets) 10-12 reps</li> <li>Dumbbell curls : (2 sets) 10-12 reps</li> <li>Seated cable rowing : (2 sets) 12-15 reps</li> <li>Hammer curls : (2 sets) 10-12 reps</li> <li>Dumbbell shrugs : (2 sets) 10-12 reps</li> <li>Hyper-extensions : (2 sets) 15-20 reps</li>'
+        document.getElementById('worklist-3').innerHTML = '<li>Barbell squats : (4 sets) 10-12 reps</li> <li>Leg curls : (3 sets) 12-15 reps</li> <li>Leg extensions : (3 sets) 12-15 reps</li> <li>Stiff leg deadlift : (2 sets) 10-12 reps</li> <li>Standing calf raises : (3 sets) 20-25 reps</li>'
+
     }
     else if(workout == 'g-w-i-4'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
@@ -296,6 +316,10 @@ window.addEventListener('load', function() {
         document.getElementById('exp-title').innerHTML = "Intermediate"
         document.getElementById('day-title').innerHTML = 4
         day_temp(4);
+        document.getElementById('worklist-1').innerHTML = '<li>Flat bench press : (3 sets) 10-12 reps</li> <li>Lat pulldown : (2 sets) 10-12 reps</li> <li>Dumbbell shoulder press : (2 sets) 10-12 reps</li> <li>Rope pushdown : (2 sets) 10-12 reps</li> <li>Pec dec fly : (2 sets) 12-15 reps</li> <li>Seated cable rowing : (2 sets) 12-15 reps</li> <li>Dumbbell curls : (2 sets) 10-12 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Barbell squats : (3 sets) 10-12 reps</li> <li>Leg curls : (3 sets) 12-15 reps</li> <li>Leg press : (2 sets) 10-12 reps</li> <li> Hyper-extensions : (2 sets) 15-20 reps</li> <li>Standing calf raises : (3 sets) 20-25 reps</li> <li>Rope crunches : (2 sets) 10-12 reps</li>'
+        document.getElementById('worklist-3').innerHTML = '<li>Incline dumbbell press : (2 sets) 10-12 reps</li> <li>Single arm dumbbell rowing : (2 sets) 10-12 reps</li> <li>Millitary press : (3 sets) 10-12 reps</li> <li>Dumbbell overhead extension : (2 sets) 10-12 reps</li> <li>Cable flies : (2 sets) 12-15 reps</li> <li>T-bar rowing : (2 sets) 12-15 reps</li> <li>Hammer curls : (2 sets) 10-12 reps</li>'
+        document.getElementById('worklist-4').innerHTML = '<li>Hack squats : (3 sets) 10-12 reps</li> <li>Leg curls : (3 sets) 12-15 reps</li> <li>Leg extensions : (2 sets) 12-15 reps</li> <li> Stiff leg deadlift : (2 sets) 10-12 reps</li> <li>Standing calf raises : (3 sets) 20-25 reps</li> <li>Plank hold : (2 sets) 90-120 sec</li>   '
         document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
     }
     else if(workout == 'g-w-i-5'){
@@ -304,6 +328,11 @@ window.addEventListener('load', function() {
         document.getElementById('exp-title').innerHTML = "Intermediate"
         document.getElementById('day-title').innerHTML = 5
         day_temp(5);
+        document.getElementById('worklist-1').innerHTML = '<li>Flat bench press : (3 sets) 10-12 reps</li> <li>Incline dumbbell press : (3 sets) 10-12 reps</li> <li>Pec dec fly : (3 sets) 12-15 reps</li> <li>Dumbbell pullover : (3 sets) 10-12 reps</li> <li>Chest dips : (3 sets) 10-12 reps</li>'
+        document.getElementById('worklist-1').innerHTML = '<li>Bent over rows : (3 sets) 10-12 reps</li> <li>Lat pulldown : (3 sets) 10-12 reps</li> <li>Seated cable rowing : (3 sets) 12-15 reps</li> <li>Close grip lat pulldown : (3 sets) 10-12 reps</li> <li>Hyper-extensions : (3 sets) 15-20 reps</li>'
+        document.getElementById('worklist-1').innerHTML = '<li>Shoulder dumbbell press : (3 sets) 10-12 reps</li> <li>Lateral raises : (3 sets) 10-12 reps</li> <li>Rear delt flies : (3 sets) 12-15 reps</li> <li>Face pulley : (3 sets) 12-15 reps</li> <li>Dumbbell shrugs : (3 sets) 10-12 reps</li>'
+        document.getElementById('worklist-1').innerHTML = '<li>Cable overhead extensions : (3 sets) 10-12 reps</li> <li>Dumbbell curls : (3 sets) 10-12 reps</li> <li>Rope pushdown : (3 sets) 10-12 reps</li> <li>Hammer curls : (3 sets) 10-12 reps</li> <li>Skull crushers : (3 sets) 10-12 reps</li>'
+        document.getElementById('worklist-1').innerHTML = '<li>Barbell squats : (3 sets) 10-12 reps</li> <li>Leg curls : (3 sets) 12-15 reps</li> <li>Leg extensions : (3 sets) 12-15 reps</li> <li>Stiff leg deadlift : (3 sets) 10-12 reps</li> <li>Standing calf raises : (3 sets) 20-25 reps</li>'
         document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
     }
     else if(workout == 'g-w-i-6'){
@@ -313,6 +342,18 @@ window.addEventListener('load', function() {
         document.getElementById('day-title').innerHTML = 6
         day_temp(6);
         document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+        document.getElementById('warmup-1').innerHTML = 'WARM-UP : Shoulder rolls , wrist rolls , arm swings , 1 set of push-ups and 1 set of dumbell overhead extensions'
+        document.getElementById('warmup-2').innerHTML = 'WARM-UP : Shoulder rolls , wrist rolls , arm swings , 2 set of chin-ups'
+        document.getElementById('warmup-3').innerHTML = 'WARM-UP : 5 min cycling , knee bends , leg swings and 50-75 squats'
+        document.getElementById('warmup-4').innerHTML = 'WARM-UP : Shoulder rolls , wrist rolls , arm swings , 1 set of push-ups and 1 set of dumbell overhead extensions'
+        document.getElementById('warmup-5').innerHTML = 'WARM-UP : Shoulder rolls , wrist rolls , arm swings , 2 set of chin-ups'
+        document.getElementById('warmup-6').innerHTML = 'WARM-UP : 5 min cycling , knee bends , leg swings and 50-75 squats'
+        document.getElementById('worklist-1').innerHTML = '<li>Incline bench press : (3 sets) 10-12 reps</li> <li>Dumbbell shoulder press : (2 sets) 10-12 reps</li> <li>Cable overhead extensions : (2 sets) 12-15 reps</li> <li>Flat dumbbell press : (2 sets) 10-12 reps</li> <li>Rear delt fly : (2 sets) 12-15 reps</li> <li>Straight bar tricep pushdown : (2 sets) 12-15 reps</li> <li>Pec dec fly : (2 sets) 12-15 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Barbell bent over rows : (3 sets) 10-12 reps</li> <li>Lat pulldown : (2 sets) 10-12 reps</li> <li>Dumbbell curls : (2 sets) 10-12 reps</li> <li>Seated cable rowing : (2 sets) 12-15 reps</li> <li>Hammer curls : (2 sets) 10-12 reps</li> <li>Dumbbell shrugs : (2 sets) 10-12 reps</li> <li>Hyper-extensions : (2 sets) 15-20 reps</li>'
+        document.getElementById('worklist-3').innerHTML = '<li>Barbell squats : (4 sets) 10-12 reps</li> <li>Leg curls : (3 sets) 12-15 reps</li> <li>Leg extensions : (3 sets) 12-15 reps</li> <li>Stiff leg deadlift : (2 sets) 10-12 reps</li> <li>Standing calf raises : (3 sets) 20-25 reps</li>'
+        document.getElementById('worklist-4').innerHTML = '<li>Flat bench press : (2 sets) 10-12 reps</li> <li>Millitary press : (2 sets) 10-12 reps</li> <li>Skull crushers : (2 sets) 10-12 reps</li> <li>Decline dumbbell press : (2 sets) 10-12 reps</li> <li>Lateral raises : (3 sets) 10-12 reps</li> <li>Single hand cable push down : (2 sets) 12-15 reps</li> <li>Cable flies : (2 sets) 12-15 reps</li>'
+        document.getElementById('worklist-5').innerHTML = '<li>Close grip lat pulldown : (3 sets) 10-12 reps</li> <li>Single arm dumbbell rowing : (2 sets) 10-12 reps</li> <li>Incline dumbbell curls : (2 sets) 10-12 reps</li> <li>T-bar rowing : (2 sets) 12-15 reps</li> <li>Preacher curls : (2 sets) 12-15 reps</li> <li>Dumbbell shrugs : (2 sets) 10-12 reps</li> <li>Hyper-extensions : (2 sets) 15-20 reps</li>'
+        document.getElementById('worklist-6').innerHTML = '<li>Hack squats : (3 sets) 10-12 reps</li> <li>Leg curls : (3 sets) 12-15 reps</li> <li>Leg press : (4 sets) 10-12 reps</li> <li>Stiff leg deadlift : (2 sets) 10-12 reps</li> <li>Standing calf raises : (3 sets) 20-25 reps</li>'
     }
     else if(workout == 'g-w-a-5'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
