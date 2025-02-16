@@ -362,6 +362,11 @@ window.addEventListener('load', function() {
         document.getElementById('day-title').innerHTML = 5
         day_temp(5);
         document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+        document.getElementById('worklist-1').innerHTML = '<li>Incline smith machine press (4 set) 10-12 reps</li> <li>Pec dec fly + flat dumbbell press (3 set) 10-12 reps</li> <li>High to low cable flies (3 set) 12-15 reps</li> <li>Dumbbell pullover (2 set) 12-15 reps</li> <li>Chest dips (3 set) 15-20 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Wide grip machine rowing (4 set) 10-12 reps</li> <li>Mag-grip lat pulldown (4 set) 10-12 reps</li> <li>Seated cable rowing (3 set) 12-15 reps</li> <li>Close grip lat pulldown (3 set) 10-12 reps</li> <li>Cable pullovers (2 set) 12-15 reps</li> <li>Weighted hypertension (2 set) 15-20 reps</li>'
+        document.getElementById('worklist-3').innerHTML = '<li>Machine shoulder press (4 set) 10-12 reps</li> <li>Cable lateral raises (4 set) 10-12 reps</li> <li>Rear delt flies + face pulls (2 set) 12-15 reps</li> <li>Rope front raises (3 set) 12-15 reps</li> <li>Barbell shrugs (3 set) 10-12 reps</li>'
+        document.getElementById('worklist-4').innerHTML = '<li>Cable overhead extensions (4 set) 10-12 reps</li> <li>Bayesian cable curls (3 set) 12-15 reps</li> <li>Single arm cable pushdown (3 set) 10-12 reps</li> <li>Preacher curls (3 set) 12-15 reps</li> <li>Lying cable skull crushers (2 set) 10-12 reps</li> <li>Hammer curls (3 set) 10-12 reps</li>'
+        document.getElementById('worklist-5').innerHTML = '<li>Smith matchine squats (4 set) 10-12 reps</li> <li>Seated leg curls (3 set) 12-15 reps</li> <li>Leg extensions (3 set) 12-15 reps</li> <li>Romanian deadlift (2 set) 10-12 reps</li> <li>Hip adduction + Hip abduction (2 set) 12-15 reps</li> <li>Standing calf raises (3 set) 15-20 reps</li>'
     }
     else if(workout == 'g-w-a-6'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
