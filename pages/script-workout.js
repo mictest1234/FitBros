@@ -144,6 +144,7 @@ function generate(){
 //             generate2('g-b-a-6')
 //         }
 //     }
+
 }
 
 function day_temp(input){
@@ -375,15 +376,24 @@ window.addEventListener('load', function() {
         document.getElementById('day-title').innerHTML = 6
         day_temp(6);
         document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+        document.getElementById('worklist-1').innerHTML = '<li>Flat dumbbell press (4 set)</li><li>Machine shoulder press (3 set)</li> <li>Pec dec fly (3 set)</li> <li>Cable lateral raises (3 set)</li> <li>Cable overhead extensions (3 set)</li><li>Single arm cable kickbacks (3 set)</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Close grip lat pulldown (4 set)</li> <li>Chest supported machine rows (4 set)</li> <li>Rear delt fly (3 set)</li> <li>Bayesian curls + Preacher curls(2 set)</li> <li> Barbell shrugs (3 set)</li> <li>Smith machine rack pulls (3 set)</li>'
+        document.getElementById('worklist-3').innerHTML = '<li>Seated leg curls (4 set) 12-15 reps</li> <li>Smith machine squats (4 sets) 10-12 reps</li> <li>Dumbbell Romanian deadlifts (4 sets) 12-15 reps</li> <li>Leg extensions (4 sets) 12-15 reps</li> <li>Hip adduction + hip abduction (2 sets) 12-15 reps</li><li>Standing Calf raises (4 set) 20-25 reps</li>'
+        document.getElementById('worklist-4').innerHTML = '<li>Incline machine press (4 set)</li> <li>Cable lateral raises (3 set)</li> <li>High to low cable fly (3 set)</li> <li>Rope front raises (2 set)</li> <li>Single arm cable pushdowns (3 set)</li> <li>Single arm cable overhead extensions (2 set)</li>'
+        document.getElementById('worklist-5').innerHTML = '<li>Seated cable rowing (4 set)</li> <li>Kneeling single arm lat pulldown (4 set)</li> <li>Face pulls (3 set)</li> <li>Dumbbell curls + hammer curls (2 set)</li> <li>Barbell shrugs (3 set)</li> <li>Weighted hypertensions (3 set)</li>'
+        document.getElementById('worklist-6').innerHTML = '<li>Leg press (4 set) 10-12 reps</li> <li>Seated leg curls (4 sets) 12-15 reps</li> <li>Bulgarian split squats (4 sets) 12-15 reps</li> <li>Sumo squats(4 sets) 12-15 reps</li> <li> Hip adduction + hip abduction (2 sets) 12-15 reps</li> <li>Standing Calf raises (4 set) 20-25 reps</li>'
     }
+    
     // body weight
-    if( workout == 'g-b-b-2'){
+    else if( workout == 'g-b-b-2'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
         document.getElementById('equip-title').innerHTML = "Body-Weighted"
         document.getElementById('exp-title').innerHTML = "Beginner"
         document.getElementById('day-title').innerHTML = 2
         day_temp(2);
-        // document.getElementById('black-box-1').style.display = 'none'
+        document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+        document.getElementById('worklist-1').innerHTML = '<li>Knee push-ups : 10-12 reps</li> <li>Band assisted Pull-ups : 10-12 reps</li> <li>Squats : 15-20 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Crunches : 15-20 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Incline push-ups : 15-20 reps</li> <li>Cobra lat pulldown : 10-12 reps</li> <li>Lunges : 12-15 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Knee Diamond push-ups : 10-12 reps</li> <li>Band assisted Chin-ups : 10-12 reps</li> <li>Lying leg raises : 15-20 reps</li>'
     }
     else if(workout == 'g-b-b-3'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
@@ -391,6 +401,10 @@ window.addEventListener('load', function() {
         document.getElementById('exp-title').innerHTML = "Beginner"
         document.getElementById('day-title').innerHTML = 3
         day_temp(3);
+        document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+         document.getElementById('worklist-1').innerHTML = '<li>Knee push-ups : 10-12 reps</li> <li>Band assisted Pull-ups : 10-12 reps</li> <li>Squats : 15-20 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Crunches : 15-20 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Incline push-ups : 15-20 reps</li> <li>Cobra lat pulldown : 10-12 reps</li> <li>Lunges : 12-15 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Knee Diamond push-ups : 10-12 reps</li> <li>Band assisted Chin-ups : 10-12 reps</li> <li>Lying leg raises : 15-20 reps</li>'
+        document.getElementById('worklist-3').innerHTML = '<li>Knee Decline push-ups : 10-12 reps</li> <li>Band assisted Pull-ups : 10-12 reps</li> <li>Sumo Squats : 15-20 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Resistane band tricep pushdown: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Plank holds : 90-120 seconds</li>'
     }
     else if(workout == 'g-b-b-4'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
@@ -398,6 +412,12 @@ window.addEventListener('load', function() {
         document.getElementById('exp-title').innerHTML = "Beginner"
         document.getElementById('day-title').innerHTML = 4
         day_temp(4);
+        document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+        document.getElementById('worklist-1').innerHTML = '<li>Knee push-ups : 10-12 reps</li> <li>Band assisted Pull-ups : 10-12 reps</li> <li>Squats : 15-20 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Crunches : 15-20 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Incline push-ups : 15-20 reps</li> <li>Cobra lat pulldown : 10-12 reps</li> <li>Lunges : 12-15 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Knee Diamond push-ups : 10-12 reps</li> <li>Band assisted Chin-ups : 10-12 reps</li> <li>Lying leg raises : 15-20 reps</li>'
+        document.getElementById('worklist-3').innerHTML = '<li>Knee push-ups : 10-12 reps</li> <li>Band assisted Pull-ups : 10-12 reps</li> <li>Squats : 15-20 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Crunches : 15-20 reps</li>'
+        document.getElementById('worklist-4').innerHTML = '<li>Incline push-ups : 15-20 reps</li> <li>Cobra lat pulldown : 10-12 reps</li> <li>Lunges : 12-15 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Knee Diamond push-ups : 10-12 reps</li> <li>Band assisted Chin-ups : 10-12 reps</li> <li>Lying leg raises : 15-20 reps</li>'
+
     }
     else if(workout == 'g-b-b-6'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
@@ -405,6 +425,14 @@ window.addEventListener('load', function() {
         document.getElementById('exp-title').innerHTML = "Beginner"
         document.getElementById('day-title').innerHTML = 6
         day_temp(6);
+        document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+        document.getElementById('worklist-1').innerHTML = '<li>Knee push-ups : 10-12 reps</li> <li>Band assisted Pull-ups : 10-12 reps</li> <li>Squats : 15-20 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Crunches : 15-20 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Incline push-ups : 15-20 reps</li> <li>Cobra lat pulldown : 10-12 reps</li> <li>Lunges : 12-15 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Knee Diamond push-ups : 10-12 reps</li> <li>Band assisted Chin-ups : 10-12 reps</li> <li>Lying leg raises : 15-20 reps</li>'
+        document.getElementById('worklist-3').innerHTML = '<li>Knee Decline push-ups : 10-12 reps</li> <li>Band assisted Pull-ups : 10-12 reps</li> <li>Sumo Squats : 15-20 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Resistane band tricep pushdown: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Plank holds : 90-120 seconds</li>'
+        document.getElementById('worklist-4').innerHTML = '<li>Knee push-ups : 10-12 reps</li> <li>Band assisted Pull-ups : 10-12 reps</li> <li>Squats : 15-20 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Crunches : 15-20 reps</li>'
+        document.getElementById('worklist-5').innerHTML = '<li>Incline push-ups : 15-20 reps</li> <li>Cobra lat pulldown : 10-12 reps</li> <li>Lunges : 12-15 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Knee Diamond push-ups : 10-12 reps</li> <li>Band assisted Chin-ups : 10-12 reps</li> <li>Lying leg raises : 15-20 reps</li>'
+        document.getElementById('worklist-6').innerHTML = '<li>Knee Decline push-ups : 10-12 reps</li> <li>Band assisted Pull-ups : 10-12 reps</li> <li>Sumo Squats : 15-20 reps</li> <li>Pike push-ups : 10-12 reps</li> <li>Resistane band tricep pushdown: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Plank holds : 90-120 seconds</li>'
+
     }
     else if(workout == 'g-b-i-2'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
@@ -412,6 +440,9 @@ window.addEventListener('load', function() {
         document.getElementById('exp-title').innerHTML = "Intermediate"
         document.getElementById('day-title').innerHTML = 2
         day_temp(2);
+        document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+        document.getElementById('worklist-1').innerHTML = '<li>Push-ups : 12-15 reps</li> <li>Pull-ups : 10-12 reps</li> <li>Squats : 15-20 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Crunches : 15-20 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Resistance band Incline push-ups : 15-20 reps</li> <li>Resistance band rowing : 10-12 reps</li> <li>Lunges : 12-15 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Diamond push-ups : 10-12 reps</li> <li>Chin-ups : 10-12 reps</li> <li>Lying leg raises : 15-20 reps</li>'
     }
     else if(workout == 'g-b-i-3'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
@@ -419,6 +450,12 @@ window.addEventListener('load', function() {
         document.getElementById('exp-title').innerHTML = "Intermediate"
         document.getElementById('day-title').innerHTML = 3
         day_temp(3);
+        document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+        document.getElementById('worklist-1').innerHTML = '<li>Push-ups : 12-15 reps</li> <li>Pull-ups : 10-12 reps</li> <li>Squats : 15-20 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Crunches : 15-20 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Resistance band Incline push-ups : 15-20 reps</li> <li>Resistance band rowing : 10-12 reps</li> <li>Lunges : 12-15 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Diamond push-ups : 10-12 reps</li> <li>Chin-ups : 10-12 reps</li> <li>Lying leg raises : 15-20 reps</li>'
+         document.getElementById('worklist-3').innerHTML = '<li>Decline push-ups : 10-12 reps</li> <li>Pull-ups : 10-12 reps</li> <li>Sumo Squats : 15-20 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Resistane band tricep pushdown: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Plank holds : 90-120 seconds</li>'
+       
+
     }
     else if(workout == 'g-b-i-4'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
@@ -426,6 +463,12 @@ window.addEventListener('load', function() {
         document.getElementById('exp-title').innerHTML = "Intermediate"
         document.getElementById('day-title').innerHTML = 4
         day_temp(4);
+        document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+         document.getElementById('worklist-1').innerHTML = '<li>Push-ups : 12-15 reps</li> <li>Pull-ups : 10-12 reps</li> <li>Squats : 15-20 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Crunches : 15-20 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Resistance band Incline push-ups : 15-20 reps</li> <li>Resistance band rowing : 10-12 reps</li> <li>Lunges : 12-15 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Diamond push-ups : 10-12 reps</li> <li>Chin-ups : 10-12 reps</li> <li>Lying leg raises : 15-20 reps</li>'
+         document.getElementById('worklist-3').innerHTML = '<li>Push-ups : 12-15 reps</li> <li>Pull-ups : 10-12 reps</li> <li>Squats : 15-20 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Crunches : 15-20 reps</li>'
+        document.getElementById('worklist-4').innerHTML = '<li>Resistance band Incline push-ups : 15-20 reps</li> <li>Resistance band rowing : 10-12 reps</li> <li>Lunges : 12-15 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Diamond push-ups : 10-12 reps</li> <li>Chin-ups : 10-12 reps</li> <li>Lying leg raises : 15-20 reps</li>'
+
     }
     else if(workout == 'g-b-i-6'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
@@ -433,6 +476,13 @@ window.addEventListener('load', function() {
         document.getElementById('exp-title').innerHTML = "Intermediate"
         document.getElementById('day-title').innerHTML = 6
         day_temp(6);
+        document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+        document.getElementById('worklist-1').innerHTML = '<li>Push-ups : 12-15 reps</li> <li>Pull-ups : 10-12 reps</li> <li>Squats : 15-20 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Crunches : 15-20 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Resistance band Incline push-ups : 15-20 reps</li> <li>Resistance band rowing : 10-12 reps</li> <li>Lunges : 12-15 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Diamond push-ups : 10-12 reps</li> <li>Chin-ups : 10-12 reps</li> <li>Lying leg raises : 15-20 reps</li>'
+         document.getElementById('worklist-3').innerHTML = '<li>Decline push-ups : 10-12 reps</li> <li>Pull-ups : 10-12 reps</li> <li>Sumo Squats : 15-20 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Resistane band tricep pushdown: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Plank holds : 90-120 seconds</li>'
+         document.getElementById('worklist-4').innerHTML = '<li>Push-ups : 12-15 reps</li> <li>Pull-ups : 10-12 reps</li> <li>Squats : 15-20 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Crunches : 15-20 reps</li>'
+        document.getElementById('worklist-5').innerHTML = '<li>Resistance band Incline push-ups : 15-20 reps</li> <li>Resistance band rowing : 10-12 reps</li> <li>Lunges : 12-15 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Diamond push-ups : 10-12 reps</li> <li>Chin-ups : 10-12 reps</li> <li>Lying leg raises : 15-20 reps</li>'
+         document.getElementById('worklist-6').innerHTML = '<li>Decline push-ups : 10-12 reps</li> <li>Pull-ups : 10-12 reps</li> <li>Sumo Squats : 15-20 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Resistane band tricep pushdown: 12-15 reps</li> <li>Resistane band bicep curls : 10-12 reps</li> <li>Plank holds : 90-120 seconds</li>'
     }
     else if(workout == 'g-b-a-3'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
@@ -441,6 +491,10 @@ window.addEventListener('load', function() {
         document.getElementById('day-title').innerHTML = 3
         day_temp(3);
         document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+        document.getElementById('worklist-1').innerHTML = '<li>Resistance band Push-ups : 12-15 reps</li> <li>Pull-ups : 10-12 reps</li> <li>Squats : 25-30 reps</li> <li>Resistance band shoulder press : 12-15 reps</li> <li>Parallel bar Tricep dips: 12-15 reps</li> <li>Resistane band bicep curls : 12-15 reps</li> <li>Crunches : 20-25 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Parallel bar dips : 15-20 reps</li> <li>Resistance band rowing : 12-15 reps</li> <li>Resistance band Lunges : 12-15 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Resistance band overhead tricep extensions : 12-15 reps</li> <li>Resistane band Hammer curls : 12-15 reps</li> <li>Lying leg raises : 20-25 reps</li>'
+        document.getElementById('worklist-3').innerHTML = '<li>Decline Push-ups :12-15 reps</li> <li>Pull-ups : 10-12 reps</li> <li>Resistance band Sumo RDL :12-15 reps</li> <li>Wall assisted handstand push-ups : 10-12 reps</li> <li>Resistane band tricep pushdown: 12-15 reps</li> <li>Resistane band bicep curls : 12-15 reps</li> <li>Plank holds : 120-150 seconds</li>'
+
     }
     else if(workout == 'g-b-a-6'){
         document.getElementById('goal-title').innerHTML = "Gain Muscle"
@@ -449,6 +503,12 @@ window.addEventListener('load', function() {
         document.getElementById('day-title').innerHTML = 6
         day_temp(6);
         document.querySelectorAll('.warmup-txt').forEach(element => element.remove());
+        document.getElementById('worklist-1').innerHTML = '<li>Resistance band Push-ups : (3 sets) 12-15 reps</li> <li>Resistance band shoulder press : (3 sets) 12-15 reps</li> <li>Decline push-ups : (3 sets) 12-15 reps</li> <li>Resistance band upright rows : (3 sets) 12-15 reps</li> <li>Resistance band overhead extensions + Parallel bar dips : (2 sets) 12-15 reps</li>'
+        document.getElementById('worklist-2').innerHTML = '<li>Pull-ups : (3 sets) 10-12 reps</li> <li>Resistance band rowing(3 set): 12-15 reps</li> <li>Resistance band face pulls : (3 sets) 12-15 reps</li> <li>Resistance band bicep curls + hammer curls : (2 sets) 12-15 reps</li> <li>Resistance band shrugs : (3 sets) 12-15 reps</li>'
+         document.getElementById('worklist-3').innerHTML = '<li>Squats : (4 sets) 25-30 reps</li> <li>Resistance band RDL : (3 sets) 12-15 reps</li> <li>Resistance band lunges : (3 sets) 12-15 reps</li> <li>Resistance band sumo squats : (2 sets) 12-15 reps</li> <li>Standing calf raises : (4 sets) 20-25 reps</li>'
+         document.getElementById('worklist-4').innerHTML = '<li>Parallel bar dips : (3 sets) 12-15 reps</li> <li>Wall supported handstand push-ups : (3 sets) 12-15 reps</li> <li>Resistance band push-ups : (3 sets) 12-15 reps</li> <li>Resistance band upright rows : (3 sets) 12-15 reps</li> <li>Resistance band tricep pushdown + Tricep dips : (2 sets) 12-15 reps</li>'
+        document.getElementById('worklist-5').innerHTML = '<li>Close grip pull-ups : (3 sets) 10-12 reps</li> <li>Resistance band rowing : (3 sets) 12-15 reps</li> <li>Resistance band face pulls : (3 sets) 12-15 reps</li> <li>Resistance band bicep curls + hammer curls : (2 sets) 12-15 reps</li> <li>Resistance band shrugs : (3 sets) 12-15 reps</li>'
+         document.getElementById('worklist-6').innerHTML = '<li>Squats : (4 sets) 25-30 reps</li> <li>Resistance band RDL : (3 sets) 12-15 reps</li> <li>Resistance band lunges : (3 sets) 12-15 reps</li> <li>Resistance band sumo squats : (2 sets) 12-15 reps</li> <li>Standing calf raises : (4 sets) 20-25 reps</li>'
     }
 
 });
